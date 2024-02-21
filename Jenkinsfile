@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                dir("/QR Code Generator") {
+                dir("/AB_Github/QR-Code-Generator/QR Code Generator") {
                     powershell 'mvn clean package' 
                 }
             }
